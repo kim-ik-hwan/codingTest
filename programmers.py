@@ -12,8 +12,28 @@
 
 # 자릿수 더하기
 
-def solution(n):
-    return sum(map(int, list(str(n))))
+# def solution(n):
+#     return sum(map(int, list(str(n))))
 
-print(solution(32))
-print(solution(153))
+# print(solution(32))
+# print(solution(153))
+
+
+# 약수의 합
+
+# Ver.1
+# def solution(n):    
+#     return n + sum([i for i in range(1, int(n//2)+1) if n % i == 0])
+
+# print(solution(12))
+
+# Ver.2
+# def solution(n):
+#     result = 0
+
+#     for i in range(1, int(n**0.5)+1):
+#         if n % i == 0:
+#             result += i + (n//i)    # 짝으로 더하기
+#     return result
+
+# print(solution(12))
