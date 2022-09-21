@@ -10,7 +10,7 @@
 # print(solution(2))
 # print(solution(3))
 
-# Ver.2
+# Ver.2 (choice)
 # def evenOrOdd(num):
 #     return "Odd" if (num%2) else "Even"  #  0 >> false
 
@@ -33,7 +33,7 @@
 # def sum_digit(number):
 #     return  number if number < 10 else number % 10 + sum_digit(number // 10) 
 
-# Ver.3
+# Ver.3 (choice)
 # def sum_digit(n):
 #     return sum(map(int, list(str(n))))  # list(map(함수, 리스트)) : 리스트의 요소를 지정된 함수로 처리
 
@@ -71,13 +71,10 @@
 
 # 정수 제곱근 판별
 
-# Ver.1
+# Ver.1 (choice)
 # def solution(n):
 #     sqrt = n**(1/2)
-    
-#     if sqrt % 1 == 0:
-#         return (sqrt+1)**2
-#     else: return -1
+#     return (sqrt+1)**2 if sqrt % 1 == 0 else -1
 
 # print(solution(121))
 # print(solution(11))
@@ -91,7 +88,7 @@
 
 # 자연수 뒤집어 배열로 만들기
 
-# Ver.1
+# Ver.1 (choice)
 # def solution(n):
 #     a=[]
 
@@ -107,7 +104,7 @@
 # def digit_reverse(n):
 #     return list(map(int, reversed(str(n))))
 
-# Ver.3
+# Ver.3 
 # def digit_reverse(n):
 #     arr =[]
 #     for i in str(n):
@@ -119,7 +116,7 @@
 
 # 문자열 내 p와 y의 개수
 
-# Ver.1
+# Ver.1 (choice)
 # def solution(s):
 #     return s.lower().count('p')==s.lower().count('y')
 
@@ -143,7 +140,7 @@
 
 # 하샤드 수
 
-# Ver.1
+# Ver.1 (choice)
 def solution(x):
     return x%sum(map(int, list(str(x))))==0
 
@@ -154,3 +151,21 @@ print(solution(13))
 # def Harshad(n):
 #     return n % sum([int(c) for c in str(n)]) == 0
 
+
+
+# 정수 내림차순으로 배치하기
+
+# Ver.1
+def solution(n):
+    ls = list(str(n))
+    ls.sort(reverse = True)
+    return int("".join(ls))
+
+# Ver.2 (choice)
+# def int_sort(n):
+#     num=list(str(n))
+#     num.sort(reverse=True)
+#     answer=" "
+#     for k in num:
+#         answer+=str(k)
+#     return int(answer)
