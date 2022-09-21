@@ -89,16 +89,16 @@
 # 자연수 뒤집어 배열로 만들기
 
 # Ver.1
-def solution(n):
-    a=[]
+# def solution(n):
+#     a=[]
 
-    while n>1:
-        a.append(int(n%10))
-        n/=10
+#     while n>1:
+#         a.append(int(n%10))
+#         n/=10
 
-    return a
+#     return a
 
-print(solution(1234))
+# print(solution(1234))
 
 # Ver.2
 # def digit_reverse(n):
@@ -111,4 +111,28 @@ print(solution(1234))
 #         arr.append(int(i))
 #     arr.reverse() 
 #     return arr
+
+
+# 문자열 내 p와 y의 개수
+
+# Ver.1
+def solution(s):
+    return s.lower().count('p')==s.lower().count('y')
+
+print( solution("pPoooyY") )
+print( solution("Pyy") )
+
+# Ver.2
+# def numPY(s):
+#     r = s.lower()
+#     p,y=0,0
+#     for char in r:
+#         if char == 'p':
+#             p+=1
+#         elif char == 'y':
+#             y+=1
+#     if p==y:
+#         return True
+#     return False
+
 
