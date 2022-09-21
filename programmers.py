@@ -39,7 +39,6 @@
 
 
 
-
 # 약수의 합
 
 # Ver.1
@@ -62,10 +61,12 @@
 #     return result
 
 
+
 # 평균 구하기
 
 # def solution(arr):
 #     return (sum(arr) / len(arr))
+
 
 
 # 정수 제곱근 판별
@@ -85,6 +86,8 @@
 # import math
 # def nextSqure(n):
 #     return 'no' if not math.sqrt(n).is_integer() else (math.sqrt(n)+1)**2
+
+
 
 # 자연수 뒤집어 배열로 만들기
 
@@ -113,14 +116,15 @@
 #     return arr
 
 
+
 # 문자열 내 p와 y의 개수
 
 # Ver.1
-def solution(s):
-    return s.lower().count('p')==s.lower().count('y')
+# def solution(s):
+#     return s.lower().count('p')==s.lower().count('y')
 
-print( solution("pPoooyY") )
-print( solution("Pyy") )
+# print( solution("pPoooyY") )
+# print( solution("Pyy") )
 
 # Ver.2
 # def numPY(s):
@@ -135,4 +139,18 @@ print( solution("Pyy") )
 #         return True
 #     return False
 
+
+
+# 하샤드 수
+
+# Ver.1
+def solution(x):
+    return x%sum(map(int, list(str(x))))==0
+
+print(solution(18))
+print(solution(13))
+
+# Ver.2
+# def Harshad(n):
+#     return n % sum([int(c) for c in str(n)]) == 0
 
