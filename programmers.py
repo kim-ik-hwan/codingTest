@@ -141,11 +141,11 @@
 # 하샤드 수
 
 # Ver.1 (choice)
-def solution(x):
-    return x%sum(map(int, list(str(x))))==0
+# def solution(x):
+#     return x%sum(map(int, list(str(x))))==0
 
-print(solution(18))
-print(solution(13))
+# print(solution(18))
+# print(solution(13))
 
 # Ver.2
 # def Harshad(n):
@@ -155,11 +155,11 @@ print(solution(13))
 
 # 정수 내림차순으로 배치하기
 
-# Ver.1
-def solution(n):
-    ls = list(str(n))
-    ls.sort(reverse = True)
-    return int("".join(ls))
+# Ver.1 
+# def solution(n):
+#     ls = list(str(n))
+#     ls.sort(reverse = True)
+#     return int("".join(ls))
 
 # Ver.2 (choice)
 # def int_sort(n):
@@ -169,3 +169,26 @@ def solution(n):
 #     for k in num:
 #         answer+=str(k)
 #     return int(answer)
+
+
+
+# 문자열을 정수로 바꾸기
+
+# Ver.1 (choice)
+
+def solution(s):
+    return int(s)
+
+print(solution('-1234'))
+
+# Ver.2
+# def strToInt(str):
+#     result = 0
+
+#     for idx, number in enumerate(str[::-1]):
+#         if number == '-':
+#             result *= -1
+#         else:
+#             result += int(number) * (10 ** idx)
+
+#     return result
