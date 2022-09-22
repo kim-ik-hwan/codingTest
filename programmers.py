@@ -192,3 +192,22 @@ print(solution('-1234'))
 #             result += int(number) * (10 ** idx)
 
 #     return result
+
+
+
+# x만큼 간격이 있는 n개의 숫자
+
+# Ver.1
+def solution(x, n):
+    a = []
+    for i in range(1,n+1): # 콜론!!
+        a.append(i*x)
+    return a
+
+    # for i in range(n):
+    #     a.append((i+1)*x)
+    # return a
+
+# Ver.2
+# def number_generator(x, n):
+#     return [(i+1) * x for i in range(n)]
