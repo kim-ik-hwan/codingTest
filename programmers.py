@@ -176,10 +176,10 @@
 
 # Ver.1 (choice)
 
-def solution(s):
-    return int(s)
+# def solution(s):
+#     return int(s)
 
-print(solution('-1234'))
+# print(solution('-1234'))
 
 # Ver.2
 # def strToInt(str):
@@ -198,16 +198,37 @@ print(solution('-1234'))
 # x만큼 간격이 있는 n개의 숫자
 
 # Ver.1
-def solution(x, n):
-    a = []
-    for i in range(1,n+1): # 콜론!!
-        a.append(i*x)
-    return a
+# def solution(x, n):
+#     a = []
+#     for i in range(1,n+1): # 콜론!!
+#         a.append(i*x)
+#     return a
 
     # for i in range(n):
     #     a.append((i+1)*x)
     # return a
 
-# Ver.2
+# Ver.2 (choice)
 # def number_generator(x, n):
 #     return [(i+1) * x for i in range(n)]
+
+
+
+# 나머지가 1이 되는 수 찾기
+
+# Ver.1 (choice)
+# def solution(n):
+#     for i in range(1,n):
+#         if n%i==1:
+#             return i
+
+# print(solution(12))
+
+# Ver.2
+# def solution(n):
+#     return [x for x in range(1,n) if n%x==1][0]
+
+    #     return min([x for x in range(1, n) if n % x == 1])
+
+
+#
