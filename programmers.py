@@ -231,4 +231,28 @@
     #     return min([x for x in range(1, n) if n % x == 1])
 
 
-#
+# 콜라츠 추측
+
+# Ver.1 (choice)
+# def solution(n):
+#     c=0
+#     while(n!=1):
+#         if (n%2==0):
+#             n/=2
+#         else:
+#             n=n*3+1
+#         c+=1
+#         if c>500:
+#             c=-1
+#             break
+#     return c
+
+# Ver.2
+def collatz(num):
+    for i in range(500):
+        num = num / 2 if num % 2 == 0 else num*3 + 1
+        if num == 1:
+            return i + 1
+    return -1
+
+
