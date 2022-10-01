@@ -248,11 +248,25 @@
 #     return c
 
 # Ver.2
-def collatz(num):
-    for i in range(500):
-        num = num / 2 if num % 2 == 0 else num*3 + 1
-        if num == 1:
-            return i + 1
-    return -1
+# def collatz(num):
+#     for i in range(500):
+#         num = num / 2 if num % 2 == 0 else num*3 + 1
+#         if num == 1:
+#             return i + 1
+#     return -1
 
 
+# 두 정수 사이의 합
+
+# Ver.1
+# def solution(a, b):
+#     if a==b:
+#         return a
+#     elif a<b:
+#         return sum(i for i in range(a,b+1))
+#     else:
+#         return sum(i for i in range(b,a+1))
+
+# Ver.2 (choice)
+def adder(a, b):
+    return sum(range(min(a,b),max(a,b)+1))
