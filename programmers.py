@@ -268,5 +268,18 @@
 #         return sum(i for i in range(b,a+1))
 
 # Ver.2 (choice)
-def adder(a, b):
-    return sum(range(min(a,b),max(a,b)+1))
+# def adder(a, b):
+#     return sum(range(min(a,b),max(a,b)+1))
+
+
+# 서울에서 김서방 찾기
+
+# Ver.1 (choice)
+# def findKim(seoul):
+#     return "김서방은 {}에 있다".format(seoul.index('Kim'))
+
+# Ver.2
+# def solution(seoul):
+#     return ('김서방은 %d에 있다' %seoul.index('Kim'))
+
+
