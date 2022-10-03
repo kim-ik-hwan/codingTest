@@ -283,3 +283,8 @@
 #     return ('김서방은 %d에 있다' %seoul.index('Kim'))
 
 
+# 핸드폰 번호 가리기 (문자열길이, 문자열 뒤에서 자르기)
+
+# def hide_numbers(s):
+#     return "*"*(len(s)-4) + s[-4:]
+
