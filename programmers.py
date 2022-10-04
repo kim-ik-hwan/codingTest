@@ -288,3 +288,18 @@
 # def hide_numbers(s):
 #     return "*"*(len(s)-4) + s[-4:]
 
+
+# 나누어 떨어지는 숫자 배열
+
+# Ver.1 (choice)
+# def solution(arr, divisor):
+#     arr = [x for x in arr if x % divisor == 0]
+#     arr.sort()
+#     return arr if len(arr) != 0 else [-1]
+
+# Ver.2
+# def solution(arr, divisor): 
+#     return sorted([n for n in arr if n%divisor == 0]) or [-1]
+
+
+
