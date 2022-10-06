@@ -309,3 +309,20 @@
 #     return arr if len(arr)!=0 else [-1]
 
 
+# 음양 더하기
+
+# Ver.1 
+def solution(absolutes, signs):
+    return sum(absolutes if sign else -absolutes for absolutes, sign in zip(absolutes, signs))
+
+# Ver.2 (choice)
+def solution(absolutes, signs):
+    s=0
+    for i in range(len(absolutes)):
+        if signs[i]:
+            s += absolutes[i]
+        else :
+            s -= absolutes[i]
+    return s
+
+
