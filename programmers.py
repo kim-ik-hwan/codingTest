@@ -312,17 +312,33 @@
 # 음양 더하기
 
 # Ver.1 
-def solution(absolutes, signs):
-    return sum(absolutes if sign else -absolutes for absolutes, sign in zip(absolutes, signs))
+# def solution(absolutes, signs):
+#     return sum(absolutes if sign else -absolutes for absolutes, sign in zip(absolutes, signs))
 
 # Ver.2 (choice)
-def solution(absolutes, signs):
-    s=0
-    for i in range(len(absolutes)):
-        if signs[i]:
-            s += absolutes[i]
-        else :
-            s -= absolutes[i]
-    return s
+# def solution(absolutes, signs):
+#     s=0
+#     for i in range(len(absolutes)):
+#         if signs[i]:
+#             s += absolutes[i]
+#         else :
+#             s -= absolutes[i]
+#     return s
+
+
+# 없는 숫자 더하기
+
+# Ver.1 (choice)
+# def solution(numbers):
+#     a=0
+#     for i in range(10):
+#        if i not in numbers:
+#             a+=i
+#     return a
+
+
+# Ver.2
+# def solution(numbers):
+#     return 45 - sum(numbers)
 
 
