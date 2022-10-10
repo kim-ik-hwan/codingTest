@@ -342,3 +342,25 @@
 #     return 45 - sum(numbers)
 
 
+# 수박수박수박수박수박수?
+
+# Ver.1 (choice)
+# def solution(n):
+#     s=""
+#     for i in range(n):
+#         if (i%2==0):
+#             s+="수"
+#         elif (i%2==1):
+#             s+="박"
+#     return s
+
+# Ver.2
+# def water_melon(n):
+#     s = "수박" * n
+#     return s[:n]
+
+# Ver.3
+# def water_melon(n):
+#     return "수박"*(n//2) + "수"*(n%2)
+
+
