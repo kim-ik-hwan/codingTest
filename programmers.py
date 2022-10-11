@@ -364,3 +364,17 @@
 #     return "수박"*(n//2) + "수"*(n%2)
 
 
+# 가운데 글자 가져오기
+
+# Ver.1
+# def string_middle(str):
+#     return str[(len(str)-1)//2:len(str)//2+1]
+
+# Ver.2 (choice)
+# def string_middle(str):
+#     l = len(str)
+#     if l%2==0:
+#         return str[l//2-1:l//2+1]
+#     else:
+#         return str[l//2]
+
