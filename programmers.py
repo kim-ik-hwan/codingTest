@@ -368,7 +368,8 @@
 
 # Ver.1
 # def string_middle(str):
-#     return str[(len(str)-1)//2:len(str)//2+1]
+#     return str[(len(str)-1)//2:len(str)//2+1] # 맨끝 포함x
+
 
 # Ver.2 (choice)
 # def string_middle(str):
@@ -377,4 +378,21 @@
 #         return str[l//2-1:l//2+1]
 #     else:
 #         return str[l//2]
+
+
+# 내적
+
+# Ver.1 (choice)
+# def solution(a, b):
+#     return sum([x*y for x, y in zip(a,b)])
+
+# Ver.2
+# solution = lambda x, y: sum(a*b for a, b in zip(x, y))
+
+# Ver.3
+# def solution(a, b):
+#     s=0
+#     for i in range(len(a)):
+#         s+=a[i]*b[i] 
+#     return s
 
